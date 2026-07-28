@@ -41,7 +41,8 @@
   const panel = document.querySelector('[data-intent-panel]');
   const intentModal = document.getElementById('intent-modal');
 
-  document.querySelectorAll('[data-intent]').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('[data-intent]').forEach(btn => btn.addEventListener('click', (e) => {
+    if (e.target.closest('.intent-button__hint')) return;
     const data = intentData[btn.dataset.intent]; if (!data) return;
     document.querySelectorAll('[data-intent]').forEach(b => b.classList.toggle('is-active', b === btn));
     
