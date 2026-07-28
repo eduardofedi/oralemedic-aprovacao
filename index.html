@@ -506,7 +506,7 @@
       </button>
       <div class="faq-answer">
        <div>
-        <p>Sim! A Oral &amp; Medic está localizada na Rua A de Souza Castro, 92 em Garça/SP (com fácil acesso e estacionamento), atendendo diariamente pacientes de Garça, Marília, Bauru, Vera Cruz, Álvaro de Carvalho, Gália e toda a região do Centro-Oeste Paulista. Com tomografia 3D e exames na própria clínica, você realiza o diagnóstico e planejamento no mesmo dia.</p>
+        <p>Sim! A Oral &amp; Medic está localizada na Rua A de Souza Castro, 92 em Garça/SP (com fácil localização e atendimento acolhedor), atendendo diariamente pacientes de Garça, Marília, Bauru, Vera Cruz, Álvaro de Carvalho, Gália e toda a região do Centro-Oeste Paulista. Com tomografia 3D e exames na própria clínica, você realiza o diagnóstico e planejamento no mesmo dia.</p>
        </div>
       </div>
      </article>
@@ -605,7 +605,7 @@
    <div class="location-copy">
     <h3>Oral &amp; Medic</h3>
     <p><strong>Rua A de Souza Castro, 92</strong><br>Garça/SP — CEP 17402-050</p>
-    <p>Estacionamento conveniente, ambiente climatizado e acessibilidade completa.</p>
+    <p>Fácil localização, ambiente climatizado e acessibilidade completa.</p>
     <div class="button-row">
      <a class="button button--dark" href="https://wa.me/5514998659506" target="_blank" rel="noopener">Agendar avaliação agora</a>
     </div>
@@ -663,11 +663,16 @@
   </div>
 </footer>
 
-<nav class="mobile-dock" aria-label="Ações rápidas">
-  <a href="/tratamentos/"><span>⌁</span>Tratamentos</a>
-  <a class="mobile-dock__main" href="/contato/"><span>+</span>Agendar</a>
-  <a href="https://www.google.com/maps/search/?api=1&query=Rua+A+de+Souza+Castro+92+Garça+SP" target="_blank" rel="noopener"><span>⌖</span>Como chegar</a>
-</nav>
+<div class="intent-modal" id="intent-modal" aria-hidden="true">
+  <div class="intent-modal__backdrop" data-intent-close></div>
+  <div class="intent-modal__content">
+    <button class="intent-modal__close" type="button" aria-label="Fechar" data-intent-close>&times;</button>
+    <span class="intent-modal__tag" data-modal-tag>Prótese Protocolo</span>
+    <h3 class="intent-modal__title" data-modal-title>Precisa substituir todos os dentes de uma arcada?</h3>
+    <p class="intent-modal__text" data-modal-text>A prótese protocolo é uma prótese total fixa sobre implantes de titânio. Oferece estabilidade total, mastigação firme e estética natural sem cobrir o céu da boca.</p>
+    <a class="button button--dark intent-modal__btn" href="/tratamentos/protese-protocolo/" data-modal-link>Ver tratamento completo ↗</a>
+  </div>
+</div>
 
 <script src="/assets/js/main.js" defer></script>
 </body>

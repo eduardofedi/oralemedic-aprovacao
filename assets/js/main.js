@@ -12,6 +12,13 @@
       mobileMenu.classList.toggle('is-open', !open);
       document.body.classList.toggle('menu-open', !open);
     });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+      });
+    });
   }
   document.querySelectorAll('[data-logo]').forEach(img => {
     img.addEventListener('error', () => img.classList.add('is-missing'));
@@ -32,14 +39,35 @@
     avaliacao: {tag:'Avaliação odontológica',title:'Ainda não sabe qual tratamento procurar?',text:'Agende uma avaliação. A equipe entende o que está acontecendo e indica o profissional adequado para o seu caso.',href:'/contato/'}
   };
   const panel = document.querySelector('[data-intent-panel]');
+  const intentModal = document.getElementById('intent-modal');
+
   document.querySelectorAll('[data-intent]').forEach(btn => btn.addEventListener('click', () => {
-    const data = intentData[btn.dataset.intent]; if (!panel || !data) return;
+    const data = intentData[btn.dataset.intent]; if (!data) return;
     document.querySelectorAll('[data-intent]').forEach(b => b.classList.toggle('is-active', b === btn));
-    panel.querySelector('[data-intent-tag]').textContent = data.tag;
-    panel.querySelector('[data-intent-title]').textContent = data.title;
-    panel.querySelector('[data-intent-text]').textContent = data.text;
-    panel.querySelector('[data-intent-link]').href = data.href;
+    
+    if (window.innerWidth < 1020 && intentModal) {
+      intentModal.querySelector('[data-modal-tag]').textContent = data.tag;
+      intentModal.querySelector('[data-modal-title]').textContent = data.title;
+      intentModal.querySelector('[data-modal-text]').textContent = data.text;
+      intentModal.querySelector('[data-modal-link]').href = data.href;
+      intentModal.classList.add('is-open');
+      document.body.classList.add('modal-open');
+    } else if (panel) {
+      panel.querySelector('[data-intent-tag]').textContent = data.tag;
+      panel.querySelector('[data-intent-title]').textContent = data.title;
+      panel.querySelector('[data-intent-text]').textContent = data.text;
+      panel.querySelector('[data-intent-link]').href = data.href;
+    }
   }));
+
+  if (intentModal) {
+    intentModal.querySelectorAll('[data-intent-close]').forEach(el => {
+      el.addEventListener('click', () => {
+        intentModal.classList.remove('is-open');
+        document.body.classList.remove('modal-open');
+      });
+    });
+  }
   const techData = {
     tomografia:{title:'Tomografia 3D',text:'Imagens de altíssima precisão para planejamento de implantes, cirurgias e próteses protocolo com total segurança.',image:'/assets/img/foto-tomografo.png'},
     panoramico:{title:'Raio-X panorâmico digital',text:'Visão ampla de toda a estrutura arcada sem necessidade de deslocamento para laboratórios externos.',image:'/assets/img/foto-raio-x-panoramico.png'},
