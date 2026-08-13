@@ -105,10 +105,13 @@
       const periodo = form.querySelector('#periodo') ? form.querySelector('#periodo').value : 'Qualquer período';
       const mensagem = form.querySelector('#mensagem') ? form.querySelector('#mensagem').value.trim() : '';
 
-      let text = `Olá! Meu nome é ${nome || 'Paciente'}. Gostaria de agendar uma avaliação na Oral & Medic para: ${interesse}.`;
-      if (whatsapp) text += `\nMeu telefone/WhatsApp: ${whatsapp}`;
-      text += `\nMelhor período: ${periodo}.`;
-      if (mensagem) text += `\nObservação: ${mensagem}`;
+      let text = `olá, vim do site da Oral & Medic e gostaria de agendar uma avaliação
+
+Nome: ${nome || 'Paciente'}
+Interesse: ${interesse}
+Período: ${periodo}`;
+      if (mensagem) text += `
+Mensagem: ${mensagem}`;
 
       const whatsappUrl = `https://wa.me/5514998659506?text=${encodeURIComponent(text)}`;
       window.open(whatsappUrl, '_blank');
