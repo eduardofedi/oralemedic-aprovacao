@@ -70,11 +70,11 @@
     });
   }
   const techData = {
-    tomografia:{title:'Tomografia 3D',text:'Imagens de altíssima precisão para planejamento de implantes, cirurgias e próteses protocolo com total segurança.',image:'/assets/img/foto-tomografo.png'},
-    panoramico:{title:'Raio-X panorâmico digital',text:'Visão ampla de toda a estrutura arcada sem necessidade de deslocamento para laboratórios externos.',image:'/assets/img/foto-raio-x-panoramico.png'},
-    scanner:{title:'Escaneamento Intraoral 3D',text:'Substitui as antigas moldagens desconfortáveis com uma câmera 3D de alta precisão.',image:'/assets/img/foto-scanner-3d.png'},
-    impressora:{title:'Impressão 3D Odontológica',text:'Produção acelerada de guias cirúrgicos e modelos de planejamento com máxima exatidão.',image:'/assets/img/foto-impressora-3d.png'},
-    camera:{title:'Câmera intraoral HD',text:'Visualização em tempo real na tela para que o paciente entenda detalhadamente seu diagnóstico.',image:'/assets/img/foto-camera-intraoral.png'}
+    tomografia:{title:'Tomografia 3D',text:'Imagens de altíssima precisão para planejamento de implantes, cirurgias e próteses protocolo com total segurança.',image:'/assets/img/foto-tomografo.webp'},
+    panoramico:{title:'Raio-X panorâmico digital',text:'Visão ampla de toda a estrutura arcada sem necessidade de deslocamento para laboratórios externos.',image:'/assets/img/foto-raio-x-panoramico.webp'},
+    scanner:{title:'Escaneamento Intraoral 3D',text:'Substitui as antigas moldagens desconfortáveis com uma câmera 3D de alta precisão.',image:'/assets/img/foto-scanner-3d.webp'},
+    impressora:{title:'Impressão 3D Odontológica',text:'Produção acelerada de guias cirúrgicos e modelos de planejamento com máxima exatidão.',image:'/assets/img/foto-impressora-3d.webp'},
+    camera:{title:'Câmera intraoral HD',text:'Visualização em tempo real na tela para que o paciente entenda detalhadamente seu diagnóstico.',image:'/assets/img/foto-camera-intraoral.webp'}
   };
   const techPanel = document.querySelector('[data-tech-panel]');
   document.querySelectorAll('[data-tech]').forEach(btn => btn.addEventListener('click', () => {
