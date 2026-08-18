@@ -79,7 +79,7 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -103,7 +103,7 @@
         "type": "FORM_SUBMISSION",
         "filter": [
           {
-            "type": "cssSelector",
+            "type": "CSS_SELECTOR",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -127,7 +127,7 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "startsWith",
+            "type": "STARTS_WITH",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -151,7 +151,7 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -175,7 +175,7 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -199,7 +199,7 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -223,7 +223,7 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
@@ -247,7 +247,7 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "contains",
+            "type": "CONTAINS",
             "parameter": [
               {
                 "type": "TEMPLATE",
