@@ -79,16 +79,16 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click URL}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "wa.me"
               }
             ]
@@ -103,16 +103,16 @@
         "type": "FORM_SUBMISSION",
         "filter": [
           {
-            "type": "MATCHES_CSS_SELECTOR",
+            "type": "cssSelector",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Form Element}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "form[data-demo-form]"
               }
             ]
@@ -127,16 +127,16 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "STARTS_WITH",
+            "type": "startsWith",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click URL}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "tel:"
               }
             ]
@@ -151,16 +151,16 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click URL}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "instagram.com"
               }
             ]
@@ -175,16 +175,16 @@
         "type": "LINK_CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click URL}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "google.com/maps"
               }
             ]
@@ -199,16 +199,16 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click Classes}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "tech-button"
               }
             ]
@@ -223,16 +223,16 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click Classes}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "faq-question"
               }
             ]
@@ -247,16 +247,16 @@
         "type": "CLICK",
         "filter": [
           {
-            "type": "CONTAINS",
+            "type": "contains",
             "parameter": [
               {
                 "type": "TEMPLATE",
-                "key": "arg1",
+                "key": "arg0",
                 "value": "{{Click Classes}}"
               },
               {
                 "type": "TEMPLATE",
-                "key": "arg2",
+                "key": "arg1",
                 "value": "ba-range"
               }
             ]
