@@ -2,10 +2,21 @@
   "exportFormatVersion": 2,
   "exportTime": "2026-08-18 15:00:00",
   "containerVersion": {
+    "path": "accounts/0/containers/0/versions/0",
     "accountId": "0",
     "containerId": "0",
     "containerVersionId": "0",
-    "variables": [
+    "container": {
+      "path": "accounts/0/containers/0",
+      "accountId": "0",
+      "containerId": "0",
+      "name": "SITE ORAL & MEDIC",
+      "publicId": "GTM-WD6MRG47",
+      "usageContext": [
+        "WEB"
+      ]
+    },
+    "variable": [
       {
         "accountId": "0",
         "containerId": "0",
@@ -21,7 +32,7 @@
         ]
       }
     ],
-    "builtInVariables": [
+    "builtInVariable": [
       {
         "accountId": "0",
         "containerId": "0",
@@ -59,7 +70,7 @@
         "name": "Form Element"
       }
     ],
-    "triggers": [
+    "trigger": [
       {
         "accountId": "0",
         "containerId": "0",
@@ -253,7 +264,7 @@
         ]
       }
     ],
-    "tags": [
+    "tag": [
       {
         "accountId": "0",
         "containerId": "0",
