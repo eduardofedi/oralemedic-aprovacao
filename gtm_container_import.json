@@ -74,6 +74,13 @@
       {
         "accountId": "0",
         "containerId": "0",
+        "triggerId": "100",
+        "name": "Page View - All Pages",
+        "type": "PAGEVIEW"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
         "triggerId": "101",
         "name": "Click - WhatsApp Links",
         "type": "LINK_CLICK",
@@ -279,7 +286,7 @@
           }
         ],
         "firingTriggerId": [
-          "2147483647"
+          "100"
         ]
       },
       {
